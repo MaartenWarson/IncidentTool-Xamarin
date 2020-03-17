@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+             x:Class="IncidentTool.Views.ScanQRView"
+             Title="Scan QR-code">
+
+    <!-- Als er een scan-resultaat is, wordt ScanCommand getriggerd -->
+    <zxing:ZXingScannerView 
+        IsScanning="True"
+        IsAnalyzing="True"
+        ScanResultCommand="{Binding ScanCommand}"
+        Result="{Binding Result, Mode=TwoWay}" />
+</ContentPage>

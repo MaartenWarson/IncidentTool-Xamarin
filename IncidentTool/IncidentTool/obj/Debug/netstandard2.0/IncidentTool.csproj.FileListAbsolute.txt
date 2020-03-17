@@ -1,0 +1,17 @@
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\Views\HomeView.xaml.g.cs
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\Views\LoginView.xaml.g.cs
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\Views\ReportedIncidentsView.xaml.g.cs
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\Views\ReportIncidentView.xaml.g.cs
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\Views\ScanQRView.xaml.g.cs
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\IncidentTool.AssemblyInfoInputs.cache
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\IncidentTool.AssemblyInfo.cs
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\bin\Debug\netstandard2.0\IncidentTool.deps.json
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\bin\Debug\netstandard2.0\IncidentTool.dll
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\bin\Debug\netstandard2.0\ref\IncidentTool.dll
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\bin\Debug\netstandard2.0\IncidentTool.pdb
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\IncidentTool.dll
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\ref\IncidentTool.dll
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\IncidentTool.pdb
+C:\Projects\IncidentTool\IncidentTool\IncidentTool\obj\Debug\netstandard2.0\IncidentTool.csprojAssemblyReference.cache

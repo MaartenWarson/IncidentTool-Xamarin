@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:vm="using:IncidentTool.ViewModels"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="IncidentTool.Views.LoginView"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="#E3FFF8">
+    <ContentPage.Content>
+        <StackLayout Padding="50" VerticalOptions="Center" Margin="0,-50,0,0">
+            <!-- Gebruikersnaam -->
+            <Entry Placeholder="Gebruikersnaam" Text="{Binding UserName, Mode=TwoWay}" 
+                   VerticalOptions="Center" HorizontalOptions="Center" 
+                   MinimumWidthRequest="175" WidthRequest="200" HorizontalTextAlignment="Center"
+                   TextColor="#FF005B64"/>
+            
+            <!-- Wachtwoord -->
+            <Entry Placeholder="Wachtwoord" Text="{Binding Password, Mode=TwoWay}"
+                   VerticalOptions="Center" HorizontalOptions="Center" 
+                   MinimumWidthRequest="175" WidthRequest="200" HorizontalTextAlignment="Center"
+                   IsPassword="True" TextColor="#FF005B64"/>
+            
+            <!-- Login-knop -->
+            <Button Text="Meld aan" FontSize="20" BackgroundColor="#FF005B64" TextColor="White"
+                    Margin="0,20,0,0" MinimumWidthRequest="175" WidthRequest="200"
+                    Command="{Binding LoginCommand}"/>
+            
+            <!-- Message -->
+            <Label Text="{Binding Message, Mode=TwoWay}" HorizontalTextAlignment="Center"
+                   Margin="0,20,0,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

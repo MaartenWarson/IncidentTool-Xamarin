@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="IncidentTool.Views.ReportIncidentView"
+             Title="Meld incident" BackgroundColor="#E3FFF8">
+    <ContentPage.Content>
+        <StackLayout Padding="20" HorizontalOptions="Start">
+            <!-- Gegevens & Buttons -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <!-- Device naam -->
+                <Label Text="{Binding DeviceName}" FontSize="12" FontAttributes="Bold"/>
+                
+                <!-- Device locatie -->
+                <Label Grid.Column="1" Text="{Binding DeviceLocation}" FontSize="12" FontAttributes="Italic"/>
+                
+                <!-- Toon-knop -->
+                <Button Grid.Column="2" Text="Toon incidenten" FontSize="10" BackgroundColor="#FF005B64" TextColor="White"
+                    WidthRequest="175" Command="{Binding ShowIncidentsCommand}"/>
+                
+                <!-- Home-knop -->
+                <Button Grid.Column="3" Text="Home" FontSize="10" BackgroundColor="#FF005B64" TextColor="White"
+                        WidthRequest="175" Command="{Binding GoHomeCommand}"/>
+            </Grid>
+
+            <!-- Incident list -->
+            <ListView VerticalOptions="FillAndExpand" ItemsSource="{Binding Incidents}" CachingStrategy="RecycleElement"
+                      SeparatorVisibility="Default" HasUnevenRows="True" Margin="10"
+                      SelectedItem="{Binding SelectedIncident}">
+                <!-- Voor ieder incident wordt een ItemTemplate gemaakt -->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid RowSpacing="10" Margin="0,10,0,10">
+                                <Label Text="{Binding Description}" TextColor="#FF005B64"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            <!-- Ander incident -->
+            <Entry Placeholder="Ander incident" Text="{Binding OtherIncidentDescription, Mode=TwoWay}" 
+                   VerticalOptions="Center"
+                   MinimumWidthRequest="175" WidthRequest="200" HorizontalTextAlignment="Start"
+                   TextColor="#FF005B64"/>
+            
+            <!-- Report incident -->
+            <Button Text="Meld incident" FontSize="20" BackgroundColor="#FF005B64" TextColor="White"
+                    MinimumWidthRequest="175" WidthRequest="250"
+                    Command="{Binding ReportIncidentCommand}"/>
+            
+            <!-- Message -->
+            <Label Text="{Binding Message, Mode=TwoWay}" HorizontalTextAlignment="Center"
+                   Margin="0,20,0,0"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
