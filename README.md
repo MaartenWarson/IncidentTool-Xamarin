@@ -3,7 +3,7 @@
 ## General Summary
 This goals of this project is to create an application that runs on both an iOS device as an Android Device using **Xamarin Forms**. This application is intended to use in a work environment. This is one of 3 repositories in this project:
 - [IncidentTool-UWP](https://github.com/MaartenWarson/IncidentTool-UWP)
-- [IncidentTool-Xamarin]()
+- [IncidentTool-Xamarin](https://github.com/MaartenWarson/IncidentTool-UWP)
 - [IncidentTool-Backend](https://github.com/MaartenWarson/IncidentTool-Backend)
 
 **IncidentTool-UWP**
@@ -36,3 +36,6 @@ Consult a physical device to make use of the camera to scan a QR code
 2. Connect your physical device to your system
 3. Enable developed mode and USB debugging
 4. Run the application
+
+## Further Information
+This project is written in the **MVVM Architecture**.
